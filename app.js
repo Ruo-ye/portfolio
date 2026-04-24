@@ -51,6 +51,13 @@ document.getElementById('projects').style.display = 'none';
 
 document.getElementById(tabId).style.display = 'block';
 
+// remove active from all
+document.getElementById("tab-about").classList.remove("active");
+document.getElementById("tab-projects").classList.remove("active");
+
+// add active to current
+document.getElementById("tab-" + tabId).classList.add("active");
+
 if (tabId === "projects") {
 renderProjects();
 }

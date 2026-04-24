@@ -22,3 +22,15 @@ border-radius: 10px;
 box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
+nav button.active {
+background: black;
+color: white;
+}
+
+.project-card {
+transition: transform 0.2s;
+}
+
+.project-card:hover {
+transform: translateY(-3px);
+}
